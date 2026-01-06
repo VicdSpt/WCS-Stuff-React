@@ -1,17 +1,5 @@
-const listPokemon = [
-  {
-    name: "Bulbasaur",
-    imageSrc:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-  },
-  {
-    name: "Mew",
-  },
-];
 
-function PokemonCard() {
-  const pokemon = listPokemon[0];  // will show bulbasaur
-//   const pokemon = listPokemon[1]; // will show Mew and ???
+function PokemonCard({pokemon}) {
 
   return (
     <figure>
