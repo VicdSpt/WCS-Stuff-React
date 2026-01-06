@@ -1,6 +1,13 @@
+interface PokemonCardProps {
+  pokemon: {
+    name: string;
+    imageSrc: string;
+    number: string;
+    level: string;
+  };
+}
 
-function PokemonCard({pokemon}) {
-
+function PokemonCard({ pokemon }: PokemonCardProps) {
   return (
     <figure>
       {pokemon.imageSrc !== undefined ? (
@@ -8,7 +15,7 @@ function PokemonCard({pokemon}) {
       ) : (
         <p>???</p>
       )}
-      <figcaption>{pokemon.name}</figcaption>
+      <figcaption>{pokemon.number} - {pokemon.name} - {pokemon.level}</figcaption>
     </figure>
   );
 }
