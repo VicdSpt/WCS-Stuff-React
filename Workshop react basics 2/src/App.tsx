@@ -3,14 +3,16 @@ import AvatarSimpsons from "./components/AvatarSimpsons";
 
 function App() {
   const Bart = {
-    image: "https://www.stickees.com/files/cartoon/the-simpsons/2239-bart-simpson-.png",
+    image:
+      "https://www.stickees.com/files/cartoon/the-simpsons/2239-bart-simpson-.png",
     firstName: "Bart",
     lastName: "Simpson",
     city: "Springfield",
     age: 15,
   };
   const Homer = {
-    image: "https://www.stickees.com/files/cartoon/the-simpsons/2246-homer-simpson-donut-2.png",
+    image:
+      "https://www.stickees.com/files/cartoon/the-simpsons/2246-homer-simpson-donut-2.png",
     firstName: "Homer",
     lastName: "Simpson",
     city: "Springfield",
@@ -24,15 +26,15 @@ function App() {
         firstName={Bart.firstName}
         lastName={Bart.lastName}
         city={Bart.city}
-        age = {Bart.age}
+        age={Bart.age}
       />
+
       <AvatarSimpsons
         image={Homer.image}
         firstName={Homer.firstName}
         lastName={Homer.lastName}
         city={Homer.city}
-        age = {Homer.age}
-
+        age={Homer.age}
       />
     </>
   );
