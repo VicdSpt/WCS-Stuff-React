@@ -32,6 +32,20 @@ const listPokemon = [
     level: "Level: 1",
   },
   {
+    name: "Charmeleon",
+    imageSrc:
+      "https://archives.bulbagarden.net/media/upload/thumb/0/05/0005Charmeleon.png/250px-0005Charmeleon.png",
+    number: "0005",
+    level: "Level: 1",
+  },
+  {
+    name: "Charizard",
+    imageSrc:
+      "https://archives.bulbagarden.net/media/upload/thumb/3/38/0006Charizard.png/250px-0006Charizard.png",
+    number: "0006",
+    level: "Level: 1",
+  },
+  {
     name: "Pikachu",
     imageSrc:
       "https://archives.bulbagarden.net/media/upload/thumb/4/4a/0025Pikachu.png/250px-0025Pikachu.png",
