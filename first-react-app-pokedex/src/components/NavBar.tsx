@@ -11,12 +11,21 @@ interface NavBarProps {
 }
 
 function NavBar({ setPokemonName, listPokemon }: NavBarProps) {
+
+    const testEffectPokemon = (PokemonName: string) => {
+        setPokemonName(PokemonName)
+
+        if(PokemonName === "Pikachu"){
+            alert("Pikaaa pikachuuu !!!")
+        }
+    }
+
   return (
     <nav>
       {listPokemon.map((onePokemonFromTheList) => (
         <button
           key={onePokemonFromTheList.number}
-          onClick={() => setPokemonName(onePokemonFromTheList.name)}
+          onClick={() => testEffectPokemon(onePokemonFromTheList.name)}
         >
           {onePokemonFromTheList.name}
         </button>

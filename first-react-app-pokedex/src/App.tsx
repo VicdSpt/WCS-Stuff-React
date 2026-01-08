@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import "./App.css";
 import PokemonCard from "./components/PokemonCard";
 import NavBar from "./components/NavBar";
@@ -50,6 +51,11 @@ const listPokemon = [
 
 function App() {
   const [pokemonName, setPokemonName] = useState("Bulbasaur");
+
+  useEffect(() => {
+    alert("Hello Pokemon Master !");
+  }, []);
+
   const pokemon = listPokemon.find((pokemon) => pokemon.name === pokemonName);
 
   if (pokemon === undefined) {
@@ -59,7 +65,7 @@ function App() {
   return (
     <div>
       <PokemonCard pokemon={pokemon} />
-      <NavBar setPokemonName={setPokemonName} listPokemon={listPokemon}/>
+      <NavBar setPokemonName={setPokemonName} listPokemon={listPokemon} />
     </div>
   );
 }
