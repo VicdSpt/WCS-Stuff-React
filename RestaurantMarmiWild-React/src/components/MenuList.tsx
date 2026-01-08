@@ -1,6 +1,6 @@
 import MenuItem from "./MenuItem";
 
-interface FoodItems {
+interface FoodItem {
   id: number;
   itemName: string;
   description: string;

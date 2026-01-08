@@ -1,7 +1,8 @@
-import MenuList from "./components/MenuList";
 import { useState } from "react";
-
 import "./App.css";
+
+import MenuList from "./components/MenuList";
+
 
 const foodItems = [
   {
@@ -54,7 +55,7 @@ function App() {
     <main>
       <h1>MarmiWild</h1>
       {/* pass the variable foodItems as props to MenuList component */}
-      <MenuList food={food}/>
+      <MenuList foodItems={foodItems}/>
 
     </main>
   );
