@@ -13,7 +13,7 @@ interface MenuItemProps {
 
 function MenuItem({ food }: MenuItemProps) {
   //create a state isFavorite that has the inital value of isFavorite that comes from the props
-  const [isFavorite, setIsFavorite] = useState(food.isFavorite)
+  const [isFavorite, setIsFavorite] = useState(food.isFavorite);
 
   return (
     <section className="itemContainer">
@@ -27,7 +27,6 @@ function MenuItem({ food }: MenuItemProps) {
           {/* the p will receive the item description from the props */}
           <p>{food.description}</p>
         </figcaption>
-
       </figure>
 
       {/* the span will receive the item price from the props */}
@@ -37,7 +36,10 @@ function MenuItem({ food }: MenuItemProps) {
               - onClick, will toggle the isFavorite state,
               - content will be conditionally rendered as "❤️" or "🖤", depending on the value of isFavorite
           */}
-      <button type="button" key={food.id} onClick={() => setIsFavorite(food.isFavorite)}>{isFavorite ? "❤️" : "🖤"}</button>
+      <button onClick={() => setIsFavorite(!isFavorite)}>
+        {isFavorite ? "❤️" : "🖤"}
+      </button>
+      
     </section>
   );
 }

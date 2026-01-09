@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 
 import MenuList from "./components/MenuList";
@@ -13,6 +12,7 @@ const foodItems = [
       "https://cdn.britannica.com/14/234014-050-CB842159/Caesar-salad-side-view.jpg",
     price: 12,
     isFavorite: false,
+    addToCart: false
   },
   {
     id: 2,
@@ -44,13 +44,7 @@ const foodItems = [
 ];
 
 function App() {
-  const [foodName, setFoodName] = useState("Caesar's Salad");
-  const foods = foodItems.find((foods) => foods.itemName === foodName);
-
-  if(foods === undefined){
-    throw new Error ("Food not found 😭")
-  }
-
+  
   return (
     <main>
       <h1>MarmiWild</h1>
