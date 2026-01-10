@@ -4,8 +4,8 @@ import RecipeModal from "../Recipes/RecipeModal";
 
 function RecipesPage({ recipes }) {
   const [filteredRecipes, setFilteredRecipes] = useState([]);
-  const [selectedRecipes, setSelectedRecipes] = useState(null);
-  const [searchRecipes, setSearchRecipes] = useState("");
+  const [selectedRecipe, setSelectedRecipe] = useState(null);
+  const [searchRecipes, setSearchRecipe] = useState("");
   const [foodCategory, setFoodCategory] = useState("");
 
   useEffect(() => {
@@ -20,19 +20,19 @@ function RecipesPage({ recipes }) {
         recipe.ingredients.some((ingredient) =>
           ingredient.toLowerCase().includes(search)
         ) ||
-        recipe.foodCategory.toLowerCase().includes(search)
+        recipe.category.toLowerCase().includes(search)
     );
     setFilteredRecipes(
       foodCategory
-        ? showResult.filter((recipe) => recipe.foodCategory === foodCategory)
+        ? showResult.filter((recipe) => recipe.category === foodCategory)
         : showResult
     );
-  }, [searchRecipes, foodCategory, recipes]);
-  const handleRecipeClick = (recipe) => setSelectedRecipes(recipe);
-  const closeModal = () => setSearchRecipes(null);
+  }, [searchRecipes, foodCategory]);
+  const handleRecipeClick = (recipe) => setSelectedRecipe(recipe);
+  const closeModal = () => setSelectedRecipe(null);
 
   const clearSearch = () => {
-    setSearchRecipes("");
+    setSearchRecipe("");
     setFoodCategory("");
   };
 
@@ -46,7 +46,7 @@ function RecipesPage({ recipes }) {
           <div className="flex flex-col md:flex-row justify-center mb-6 space-y-4 md:space-y-0 md:space-x-4">
             <input
               value={searchRecipes}
-              onChange={(event) => setSearchRecipes(event.target.value)}
+              onChange={(event) => setSearchRecipe(event.target.value)}
               className="w-full md:w-1/2 px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-500"
               placeholder="Search for a recipes"
               type="text"
@@ -57,10 +57,10 @@ function RecipesPage({ recipes }) {
               className="w-full md:w-1/4 px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
               <option>All Categories</option>
-              {[...new Set(recipes.map((recipe) => recipe.foodCategory))].map(
-                (cat, index) => (
-                  <option key={index} value={cat}>
-                    {cat}
+              {[...new Set(recipes.map((recipe) => recipe.category))].map(
+                (categoryName, index) => (
+                  <option key={index} value={categoryName}>
+                    {categoryName}
                   </option>
                 )
               )}
@@ -85,8 +85,8 @@ function RecipesPage({ recipes }) {
           )}
         </div>
       </section>
-      {selectedRecipes && (
-        <RecipeModal recipe={selectedRecipes} onClose={closeModal} />
+      {selectedRecipe && (
+        <RecipeModal recipe={selectedRecipe} onClose={closeModal} />
       )}
     </main>
   );

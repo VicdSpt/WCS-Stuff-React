@@ -3,11 +3,10 @@ import Page from "./Page";
 
 function HomePage() {
   return (
-    <Page>
-      <div className="container mx-auto text-center py-20">
-        {" "}
+    <Page id="home">
+      <div  className="container mx-auto text-center py-20">
         <h1 className="text-5xl font-bold mb-4 text-gray-800">
-          Welcome to Tasty Recipes
+          Welcome to Recipes by Vic
         </h1>
         <p className="text-lg mb-8 text-gray-600">
           Discover delicious recipes from around the world.

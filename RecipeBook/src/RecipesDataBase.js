@@ -349,7 +349,7 @@ const recipes = [
   {
     title: "Chicken Tacos",
     category: "Mexican",
-    image: "https://www.themealdb.com/images/media/meals/1525876460.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTe5QxWgD187m67kvipLramoRcomQTaIrYjQ&s",
     ingredients: [
       "2 chicken breasts, cooked and shredded",
       "8 small corn tortillas",
@@ -369,7 +369,7 @@ const recipes = [
   {
     title: "Beef Stroganoff",
     category: "Main Course",
-    image: "https://www.themealdb.com/images/media/meals/x0l8nq1511386427.jpg",
+    image: "https://hips.hearstapps.com/hmg-prod/images/beef-stroganoff-index-652e9646c4d0f.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*",
     ingredients: [
       "500g beef sirloin, sliced",
       "1 onion, chopped",
