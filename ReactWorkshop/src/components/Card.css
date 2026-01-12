@@ -68,6 +68,10 @@
   padding: 0;
   text-decoration: none;
 }
+.card-socials > a:hover{
+  scale: 1.3;
+  color: #5d4cde;
+}
 
 .card-socials > a > i {
   position: relative;

@@ -14,7 +14,7 @@ function CardDisplay() {
       <Card
         name="Vic"
         role="Full Stack Dev"
-        bio="Learn dev and stuff"
+        bio="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam veritatis consectetur minus sunt error totam doloremque cum recusandae."
         socials={socials}
         onSocialClick={handleSocialClick}
       />
@@ -22,3 +22,4 @@ function CardDisplay() {
   );
 }
 export default CardDisplay;
+
