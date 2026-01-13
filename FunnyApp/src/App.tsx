@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import PersonAvatar from "./components/PersonAvatar";
+import { people } from "./components/AvatarInfo";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
+      <h1>Punches of the day</h1>
+      <div className="images-container">
+        {people.map((person, index) => (
+          <div key={index}>
+            <PersonAvatar
+              firstName={person.firstName}
+              lastName={person.lastName}
+              image={person.image}
+            />
+          </div>
+        ))}
+      </div>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        winner:
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="tenor-gif-embed" data-postid="8038917888032528445" data-share-method="host" data-aspect-ratio="1.83088" data-width="100%"><a href="https://tenor.com/view/richard-attenborough-whip-whipped-whiplash-whiplashed-gif-8038917888032528445">Richard Attenborough Whip GIF</a>from <a href="https://tenor.com/search/richard+attenborough-gifs">Richard Attenborough GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
