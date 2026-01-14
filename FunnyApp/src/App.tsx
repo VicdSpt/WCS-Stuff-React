@@ -1,26 +1,56 @@
 import "./App.css";
 import PersonAvatar from "./components/PersonAvatar";
 import { people } from "./components/AvatarInfo";
+import SportsMmaIcon from "@mui/icons-material/SportsMma";
+import Winner from "./components/Winner";
+import { useState } from "react";
 
 function App() {
+  
+  const [punchCounts, setPuncCounts] = useState(people.map(() => 0));
+
+  const handlePunch = (index: number) => {
+    setPuncCounts(prev => {
+      const newCounts = [...prev];
+      newCounts[index] = newCounts[index] + 1
+      return newCounts
+    })
+  }
+
+  const maxPunches = Math.max(...punchCounts);
+  const winnerIndex = punchCounts.indexOf(maxPunches)
+  const winner = maxPunches > 0 ? people[winnerIndex] : null
+
   return (
     <>
-      <h1>Punches of the day</h1>
-      <div className="images-container">
-        {people.map((person, index) => (
-          <div key={index}>
-            <PersonAvatar
-              firstName={person.firstName}
-              lastName={person.lastName}
-              image={person.image}
+      <div>
+        <h1>
+          <SportsMmaIcon fontSize="large" /> Reminders of the day    <SportsMmaIcon fontSize="large" />
+        </h1>
+        <div className="images-container">
+          {people.map((person, index) => (
+            <div key={index}>
+              <PersonAvatar
+                firstName={person.firstName}
+                lastName={person.lastName}
+                image={person.image}
+                punchCount={punchCounts[index]}
+                onPunchClick={() => handlePunch(index)}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="winner-container">
+          <div>
+            <Winner
+              winner={winner}
+              punchCount={maxPunches}
+              allPeople={people}
+              punchCounts={punchCounts} 
             />
           </div>
-        ))}
+        </div>
       </div>
-      <div>
-        winner:
-      </div>
-      <div className="tenor-gif-embed" data-postid="8038917888032528445" data-share-method="host" data-aspect-ratio="1.83088" data-width="100%"><a href="https://tenor.com/view/richard-attenborough-whip-whipped-whiplash-whiplashed-gif-8038917888032528445">Richard Attenborough Whip GIF</a>from <a href="https://tenor.com/search/richard+attenborough-gifs">Richard Attenborough GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     </>
   );
 }

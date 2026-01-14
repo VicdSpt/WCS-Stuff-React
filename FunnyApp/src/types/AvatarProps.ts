@@ -1,6 +1,8 @@
 export interface PersonAvatarProps {
     firstName: string,
     lastName: string,
-    image: string
+    image: string;
+    punchCount?: number;
+    onPunchClick?: () => void;
 }
 

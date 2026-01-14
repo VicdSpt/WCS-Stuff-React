@@ -1,23 +1,18 @@
 import BoxingCount from "./BoxingCount";
 import { type PersonAvatarProps } from "../types/AvatarProps";
 
-function PersonAvatar({ firstName, lastName, image }: PersonAvatarProps) {
+function PersonAvatar({ firstName, lastName, image, punchCount = 0, onPunchClick }: PersonAvatarProps) {
   return (
-    <>
-      <div>
-        <div className="avatar-profile">
-          <img className="avatar-image"
-            src={image}
-            alt={`${firstName} ${lastName}`}
-            style={{ width: "100px" }}
-          />
-          <p className="avatar-text">{`${firstName} ${lastName}`}</p>
-          <p className="avatar-btn">
-            <BoxingCount />
-          </p>
-        </div>
-      </div>
-    </>
+    <div className="avatar-profile">
+      <img 
+        className="avatar-image"
+        src={image}
+        alt={`${firstName} ${lastName}`}
+      />
+      <p className="avatar-text">{`${firstName} ${lastName}`}</p>
+      <BoxingCount count={punchCount} onClick={onPunchClick} />
+    </div>
   );
 }
+
 export default PersonAvatar;

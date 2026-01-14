@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 
-function BoxingCount() {
-    const [boxingPunch, setboxingPunch] = useState(0)
+interface BoxingCountProps {
+  count: number;
+  onClick?: () => void;
+}
+
+function BoxingCount({ count, onClick }: BoxingCountProps) {
   return (
     <div>
-        <button onClick={() => setboxingPunch(boxingPunch + 1)}>{boxingPunch}</button>
+      <button className="avatar-btn" onClick={onClick}>
+        💥{count}💥
+      </button>
     </div>
-  )
+  );
 }
-export default BoxingCount
+
+export default BoxingCount;
