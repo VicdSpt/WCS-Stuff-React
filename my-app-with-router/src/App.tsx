@@ -10,7 +10,7 @@ function App() {
         <Link to="/about">About</Link>
         <Link to="/articles/1">Article 1</Link>
         <Link to="/articles/2">Article 2</Link>
-        <Link to="/articles/2">Article 3</Link>
+        <Link to="/articles/3">Article 3</Link>
         <Link to="/contact">Contat</Link>
       </nav>
       <main>
