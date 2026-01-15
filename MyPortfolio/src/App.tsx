@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import './App.css'
+// import { useState } from 'react'
+import { Link, Outlet } from "react-router";
+import "./App.css";
 
-// import Header from "./component/Header"
-import Footer from "./component/Footer"
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
-  
-
   return (
     <>
-      {/* <Header /> */}
+      <Header />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
