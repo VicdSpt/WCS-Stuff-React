@@ -40,17 +40,13 @@ function Projects() {
     <main className="container mx-auto py-20 px-4">
       <div>
         <header className="text-center bg-amber-300 mb-5 py-4">
-          <h1>My Project</h1>
+          <h1 className="text-4xl font-bold mb-2">My Project</h1>
           <p>Projects I have done to learn and practice</p>
         </header>
-
-        <section className="bg-red-300 mb-5 py-5 px-4">
+        <section className=" mb-5 py-5 px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {projects.map((project) => (
-              <div
-                key={project.id}
-                className="bg-white rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-              >
+              <div key={project.id}className="bg-slate-200 rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="p-6">
                   <h2 className="text-2xl text-center font-bold text-gray-800 mb-3">
                     {project.title}
@@ -60,7 +56,12 @@ function Projects() {
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((techno, index) => (
-                      <span key={index} className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">{techno}</span>
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full font-medium"
+                      >
+                        {techno}
+                      </span>
                     ))}
                   </div>
                   <div className="flex gap-3">

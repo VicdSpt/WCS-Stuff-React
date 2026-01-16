@@ -9,7 +9,7 @@ function Hero() {
         className="w-32 h-32 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full border-2 shrink-0"
       />
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center sm:text-left">
-        Welcome to my world
+        Welcome to the new ORDER
       </h1>
     </div>
   );
