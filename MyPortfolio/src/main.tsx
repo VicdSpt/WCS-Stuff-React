@@ -1,10 +1,11 @@
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router";
 
+
 import './index.css'
 import App from './App.tsx'
 
-import Home from './components/Home';
+import Home from './MainHomePage.tsx';
 import Skills from './pages/Skills'
 import Projects from './pages/Projects'
 import Hobbies from './pages/Hobbies'
@@ -38,10 +39,10 @@ const router = createBrowserRouter([
   }
 ]);
 
-const rootElement = document.getElementById("root")
+const roolElement = document.getElementById("root")
 
-if(rootElement != null){
-  ReactDOM.createRoot(rootElement).render(
+if(roolElement != null){
+  ReactDOM.createRoot(roolElement).render(
     <RouterProvider router={router} />
   )
 }
