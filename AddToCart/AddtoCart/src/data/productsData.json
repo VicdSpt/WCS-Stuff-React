@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "description": "Premium noise-cancelling wireless headphones with 30-hour battery life",
+    "price": 199.99,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop",
+    "category": "Audio"
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "description": "Fitness tracking smartwatch with heart rate monitor and GPS",
+    "price": 299.99,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
+    "category": "Wearables"
+  },
+  {
+    "id": 3,
+    "name": "Laptop Stand",
+    "description": "Ergonomic aluminum laptop stand with adjustable height",
+    "price": 49.99,
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop",
+    "category": "Accessories"
+  },
+  {
+    "id": 4,
+    "name": "Mechanical Keyboard",
+    "description": "RGB backlit mechanical keyboard with blue switches",
+    "price": 129.99,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=400&fit=crop",
+    "category": "Accessories"
+  },
+  {
+    "id": 5,
+    "name": "Wireless Mouse",
+    "description": "Precision wireless mouse with ergonomic design",
+    "price": 59.99,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=400&h=400&fit=crop",
+    "category": "Accessories"
+  },
+  {
+    "id": 6,
+    "name": "USB-C Hub",
+    "description": "7-in-1 USB-C hub with HDMI, USB ports, and SD card reader",
+    "price": 79.99,
+    "image": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=400&h=400&fit=crop",
+    "category": "Accessories"
+  },
+  {
+    "id": 7,
+    "name": "Portable Charger",
+    "description": "20,000mAh portable power bank with fast charging",
+    "price": 39.99,
+    "image": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&h=400&fit=crop",
+    "category": "Accessories"
+  },
+  {
+    "id": 8,
+    "name": "Webcam HD",
+    "description": "1080p HD webcam with auto-focus and built-in microphone",
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=400&h=400&fit=crop",
+    "category": "Audio"
+  }
+]
