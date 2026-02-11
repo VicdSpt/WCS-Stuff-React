@@ -2,6 +2,7 @@ import "./App.css";
 import SimpleToggle from "./SimpleToggle";
 import CharacterCount from "./CharacterCount";
 import TemperatureSlider from "./TemperatureSlider";
+import RapidCounter from "./RapidCounter";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <SimpleToggle />
       <CharacterCount />
       <TemperatureSlider />
+      <RapidCounter />
     </>
   );
 }
