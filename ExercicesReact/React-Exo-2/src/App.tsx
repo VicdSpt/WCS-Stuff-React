@@ -6,6 +6,7 @@ import RapidCounter from "./RapidCounter";
 import LoginForm from "./LoginForm";
 import TrafficLight from "./TrafficLight";
 import TagList from "./TagList";
+import ProfileEditor from "./Profile"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <LoginForm />
       <TrafficLight />
       <TagList />
+      <ProfileEditor />
     </>
   );
 }
