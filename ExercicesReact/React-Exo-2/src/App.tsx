@@ -5,6 +5,7 @@ import TemperatureSlider from "./TemperatureSlider";
 import RapidCounter from "./RapidCounter";
 import LoginForm from "./LoginForm";
 import TrafficLight from "./TrafficLight";
+import TagList from "./TagList";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <RapidCounter />
       <LoginForm />
       <TrafficLight />
+      <TagList />
     </>
   );
 }
