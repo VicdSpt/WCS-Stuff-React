@@ -2,6 +2,7 @@ import './App.css'
 import Counter from './Counter'
 import ExoInput from './ExoInput'
 import ToggleButton from './ToggleButton'
+import ShowHide from './ShowHide'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Counter />
     <ToggleButton />
     <ExoInput />
+    <ShowHide />
     </>
   )
 }

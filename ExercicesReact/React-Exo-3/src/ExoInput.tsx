@@ -10,10 +10,10 @@ export default function ExoInput() {
       <textarea
         value={text}
         onChange={(e) => setText(e.target.value)}
-        maxLength={100}
+        maxLength={110}
       ></textarea>
-      <p style={{ color: remaining > 50 ? "red" : "white" }}>
-        {remaining} / 50 characters
+      <p style={{ color: remaining > 100 ? "red" : "white" }}>
+        {remaining} / 100 characters
       </p>
     </div>
   );
