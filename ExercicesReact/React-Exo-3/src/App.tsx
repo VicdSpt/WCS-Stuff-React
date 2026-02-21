@@ -3,6 +3,7 @@ import Counter from './Counter'
 import ExoInput from './ExoInput'
 import ToggleButton from './ToggleButton'
 import ShowHide from './ShowHide'
+import LikeButton from './LikeButton'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <ToggleButton />
     <ExoInput />
     <ShowHide />
+    <LikeButton />
     </>
   )
 }
