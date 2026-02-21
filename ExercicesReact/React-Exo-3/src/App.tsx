@@ -1,6 +1,8 @@
 import './App.css'
 import Counter from './Counter'
+import ExoInput from './ExoInput'
 import ToggleButton from './ToggleButton'
+
 
 function App() {
 
@@ -8,6 +10,7 @@ function App() {
     <>
     <Counter />
     <ToggleButton />
+    <ExoInput />
     </>
   )
 }
