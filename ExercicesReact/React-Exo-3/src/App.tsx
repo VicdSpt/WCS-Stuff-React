@@ -6,6 +6,7 @@ import ShowHide from './ShowHide'
 import LikeButton from './LikeButton'
 import DropDownButton from './DropDownButton'
 import MultipleForm from './MultipleForm'
+import StepWizard from './StepWizard'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <LikeButton />
     <DropDownButton />
     <MultipleForm />
+    <StepWizard />
     </>
   )
 }
