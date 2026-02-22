@@ -5,6 +5,7 @@ import ToggleButton from './ToggleButton'
 import ShowHide from './ShowHide'
 import LikeButton from './LikeButton'
 import DropDownButton from './DropDownButton'
+import MultipleForm from './MultipleForm'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <ShowHide />
     <LikeButton />
     <DropDownButton />
+    <MultipleForm />
     </>
   )
 }
