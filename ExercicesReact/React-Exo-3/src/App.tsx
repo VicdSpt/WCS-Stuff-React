@@ -4,6 +4,7 @@ import ExoInput from './ExoInput'
 import ToggleButton from './ToggleButton'
 import ShowHide from './ShowHide'
 import LikeButton from './LikeButton'
+import DropDownButton from './DropDownButton'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <ExoInput />
     <ShowHide />
     <LikeButton />
+    <DropDownButton />
     </>
   )
 }
