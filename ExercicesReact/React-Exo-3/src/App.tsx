@@ -7,6 +7,8 @@ import LikeButton from './LikeButton'
 import DropDownButton from './DropDownButton'
 import MultipleForm from './MultipleForm'
 import StepWizard from './StepWizard'
+import TodoList from './TodoList'
+import UserProfile from './UserProfile'
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
     <DropDownButton />
     <MultipleForm />
     <StepWizard />
+    <TodoList />
+    <UserProfile />
     </>
   )
 }
