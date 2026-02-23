@@ -46,5 +46,13 @@
         "technologies": ["HTML", "CSS", "JavaScript"],
         "github": "https://github.com/VicdSpt/WCS-Stuff-JS/tree/main/SnakeGame-JS",
         "vercel": "https://wcs-stuff-js-zr69.vercel.app/"
+    },
+    {
+        "id": 7,
+        "title": "World of Warcraft Characters Search",
+        "description": "Building a World of Warcraft Characters Search.",
+        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Vite", "Mui"],
+        "github": "https://github.com/VicdSpt/WoW-Search/tree/main/WoWSearch",
+        "vercel": "https://wo-w-search.vercel.app/"
     }
 ]
