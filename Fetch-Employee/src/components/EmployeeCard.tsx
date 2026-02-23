@@ -17,7 +17,7 @@ export default function EmployeeCard({ employee }: EmployeeCardProps) {
       <img src={employee.picture.medium} alt={employee.name.first} />
       <figcaption>
         <strong>
-          {employee.name.first} {employee.name.last}
+          {employee.name.first}{employee.name.last}<br/>
         </strong>
         {employee.email}
       </figcaption>

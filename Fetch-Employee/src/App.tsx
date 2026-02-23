@@ -1,7 +1,7 @@
 import { useState } from "react";
-import EmployeeCard from "./components/EmployeeCard";
 import "./App.css";
 
+import EmployeeCard from "./components/EmployeeCard";
 
 const sampleEmployee = {
   name: {
@@ -17,19 +17,20 @@ const sampleEmployee = {
 function App() {
   const [employee, setEmployee] = useState(sampleEmployee);
   const getEmployee = () => {
-    // Send the request
-    fetch("http://localhost:3310/api/employees")
+    fetch("https://randomuser.me/api?nat=en")
       .then((response) => response.json())
       .then((data) => {
-        setEmployee(data.results[1]);
-      });
-  };
+        setEmployee(data.results[0])
+      })
+  }
 
   return (
-    <div className='App'>
-      <EmployeeCard employee={employee} />
-      <button type="button" onClick={getEmployee}>Get employee</button>
-    </div>
+    <>
+      <div className="App">
+        <EmployeeCard employee={employee} />
+        <button type="button" onClick={getEmployee}>Get Employee</button>
+      </div>
+    </>
   );
 }
 
